@@ -1,18 +1,21 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ru">
-<head> <!-- служебная часть -->
-    <meta charset="UTF-8"> <!-- кодировка чтобы браузер понимал русский -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- чтобы на телефоне открывалось нормально, ширина страницы = ширине экрана и масштаб 100% при загрузке-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получи содержимое папки upload</title>
 </head>
-<body> <!-- видимая часть -->
-    <h1>Получи данные с папки upload прямо здесь!</h1>
-    <h2>Просто нажми на кнопку! Но если тебя интересует конкретный файл,введи его название в поле!<h2>
-    <form action="contentForm">
-        <button type="button">Get upload</button>
-        <h1></h1>
-        <input type="text" name="path" placeholder="Введите имя файла или директории">
-        <input type="submit" value="Отправить">
-    </form>
+<body>
+    <h1>Получи содержимое папки upload</h1>
+    
+    <div id="buttonsContainer">
+        <div>Загрузка данных...</div>
+    </div>
+     <div id="fileContainer">
+        <div></div>
+    </div>
+    
+    <div id="errorContainer" style="display: none; color: red;"></div>
      <script src="script.js"></script>
 </body>
 </html>
